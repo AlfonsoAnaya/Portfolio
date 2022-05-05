@@ -275,7 +275,7 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 280px;
+        min-width: 310px;
         position: relative;
         z-index: 2;
     }    
