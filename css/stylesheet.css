@@ -137,6 +137,7 @@ h3 { font-size: var(--fs-h3) }
     padding: .20em .8em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    height: 50px;
 }
 
 .section__subtitle--work {
