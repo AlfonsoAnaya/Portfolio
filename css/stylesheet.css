@@ -437,6 +437,7 @@ header {
 
 .portfolio__title {
     font-weight: 900;
+    margin-bottom: .25em;
 }
 
 .portfolio__description {
@@ -471,6 +472,23 @@ header {
                 
 .portfolio__item:hover .portfolio__info {
     opacity: .95;
+}
+
+.portfolio-tools-flex {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    margin: 0 auto;
+    margin-bottom: .75em;
+    justify-content: center;
+}
+
+.portfolio-tool {
+    font-size: .7em;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    padding: .1em .3em;
+    width: fit-content;
 }
 
 /* footer */
