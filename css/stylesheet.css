@@ -295,7 +295,7 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 310px;
+        min-width: 320px;
         position: relative;
         z-index: 2;
     }    
@@ -413,6 +413,7 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
 }
 
 .portfolio__item {
@@ -489,6 +490,22 @@ header {
     background-color: var(--clr-dark);
     padding: .1em .3em;
     width: fit-content;
+}
+
+#portfolio01 {
+    order: 4;
+}
+#portfolio02 {
+    order: 5;
+}
+#portfolio03 {
+    order: 3;
+}
+#portfolio04 {
+    order: 2;
+}
+#portfolio05 {
+    order: 1;
 }
 
 /* footer */
