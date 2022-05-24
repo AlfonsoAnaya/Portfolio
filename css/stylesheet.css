@@ -265,7 +265,7 @@ header {
 .intro__tag-container {
     grid-area: tags;
     display: flex;
-    gap: 1em;
+    gap: .75em;
     flex-wrap: wrap;
 }
 
@@ -478,7 +478,7 @@ header {
 .portfolio-tools-flex {
     display: flex;
     flex-direction: row;
-    gap: .5em;
+    gap: .35em;
     margin: 0 auto;
     margin-bottom: .75em;
     justify-content: center;
@@ -506,6 +506,9 @@ header {
 }
 #portfolio05 {
     order: 1;
+}
+#portfolio06 {
+    order: 0;
 }
 
 /* footer */

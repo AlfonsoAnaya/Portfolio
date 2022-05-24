@@ -34,29 +34,37 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                Brewdog<strong>React-based app</strong>
+                Bois Vintage<strong>Local business website</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">React app populated with API data</p>
-            <img src="../Images/portfolio05.png" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">React app displaying products and photo galleries</p>
+            <img src="../Images/portfolio06.png" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>This React-based app lets you explore the beers brewed by Brewdog by accessing the free-to-use Punk API. by using the filters, you can 
-                explore all beers, by alcohol volume or by bitterness. 
+            <p>Website build with React. Header and footer (with contact details, links to social media 
+                 and credits) are fixed, while the main content is dynamically rendered using Router. 
             </p>
-            <p>Upon mounting, the app calls Brewdog's API and displays the first page of results (25 beers). This API call is made using fetch()
-                and is asyncronously called using react's useEffect(), which makes the fetch call after the App is mounted for the first time. 
-                The filster in the top of the page are wired with eventListeners, which in turn change the search parameter using React's 
-                built in function to update State. State is stored in Context and is updated accordingly by the filter buttons. UseEffect runs the fetch   
-                call again when these states are updated by the filters. The new incoming data is rendered in the page and replaces the old one. 
+            <p>The home page displays a grid of products. Each element in the grid displays a thumbnail photo of the
+                product. Each element of the grid is produced by mapping through an array of products (javascript objects), which
+                contain information about that product.
             </p>
-            <p>The information provided by the API is displayed in cards using CSS grid and flexbox. Each card can be hovered to display further
-                information about each individual beer.
+            <p>
+                Hovering on each element of the grid reveals a short description of the item as well as the price. 
+                The cursor also changes to "pointer" to signal to the user that they can click on it.
+            </p>
+            <p>Clicking on each element in the grid takes us to an individual product page.
+                This individual product page is dynamically generated using the same array of products. The correct element int he array
+                (i.e. the correct product) by passing the id of the clicked product (with useParams) to the individual page.
+            </p>
+            <p>
+                Each individual product page displays a photo gallery. The gallery buttons update state, which in displays
+                a new photo in the photo gallery array.
             </p>
         </div>
         <div class="portfolio-item-individual-link-container">
-            <a href="https://poetic-queijadas-4199b9.netlify.app/" target="_blank" class="portfolio-individual__link btn">Visit website</a>
+            <a href="https://storied-swan-9c4876.netlify.app/" target="_blank" class="portfolio-individual__link btn">Visit website</a>
         </div>
+        
         
         <!-- Footer -->
         <footer class="footer">
