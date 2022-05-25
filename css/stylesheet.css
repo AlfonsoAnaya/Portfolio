@@ -422,6 +422,7 @@ header {
     position: relative;
 }
 
+
 .portfolio__info {
     transition: .5s ease;
     opacity: 0;
@@ -560,7 +561,7 @@ header {
 /* Individual portfolio item styles */
 
 .portfolio-item-individual {
-    padding: 0 0 1em 0;
+    padding: 0 1.5em 1em 1.5em;
     max-width: 1000px;
     margin: 0 auto;
 }
