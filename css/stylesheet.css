@@ -554,7 +554,7 @@ header {
     order: 4;
 }
 #portfolio02 {
-    order: 5;
+    order: 6;
 }
 #portfolio03 {
     order: 3;
@@ -567,6 +567,9 @@ header {
 }
 #portfolio06 {
     order: 0;
+}
+#portfolio07 {
+    order: 5;
 }
 
 /* footer */
@@ -638,22 +641,3 @@ header {
 .portfolio-individual__link{
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
