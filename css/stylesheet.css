@@ -299,6 +299,7 @@ header {
     display: flex;
     gap: .75em;
     flex-wrap: wrap;
+    margin-bottom: 1.5em;
 }
 
 .intro__tag-element {
@@ -307,9 +308,10 @@ header {
     width: fit-content;
     padding: .4em 1.2em;
     background-color: var(--clr-dark);
-    color: var(--clr-light);
+    color: rgb(248, 248, 248, .8);
     height: fit-content;
     border-radius: 2px;
+    margin: 0;
 }
 
 @media (min-width: 800px) {
@@ -340,6 +342,15 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+
+    .intro__tag-container {
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .intro__tag-element {
+        font-size: .7em;
     }
 }
 
