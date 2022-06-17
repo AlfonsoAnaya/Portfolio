@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alfonso Anaya Web Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../css/stylesheet.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../home.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="home.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="home.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="home.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Expandable Gallery<strong>Reusable Component</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Built with CSS and Javascript</p>
+            <img src="../Images/portfolio07.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This is a relatively simple component that displays images in a visually attractive way. different
+                versions of this idea were making the rounds of social media in June 2022.
+                As an exercise I decided to implement it from scratch. 
+            </p>
+            <p>This version improves in important ways the more simple versions available at the time of writing this (mid June 2022).
+                First, it uses Scrimba API to get images from Unsplash. In this way, new images are displayed whenever the page is refreshed.
+                In addition, using a simple if statement in javascript, the app fetches landscape-orientated photos when used in small screens 
+                (less than 1300px) and fetches portrait-orientated photos in bigger screens. 
+            </p>
+            <p>
+                Second, most versions of this component don't shrink enlarged photos when clicking on it. This is isn't the best
+                behaviour - it's impossible to go back to the initial state. To deal with this I simply added an if statement in 
+                javascript to check, first of all, if the clicked images is enlarged - if it is, then javascript will shrink it back
+                to its initial size.
+            </p>
+            <p>Third, I added credits for all the images with links to the photographers and to the unsplsh website. 
+                The information is displayed when hovering at the bottom of the images. 
+            </p>
+            <p>
+                The component uses grid to display the images and uses media queries to responsively display the photos
+                in small and large screens. 
+            </p>
+        </div>
+        <div class="portfolio-item-individual-link-container">
+            <a href="https://expandable-gallery.netlify.app/" target="_blank" class="portfolio-individual__link btn">Visit website</a>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="" class="footer__link">alfonso.ws@gmail.com</a>
+            <ul class="social-list">
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://codepen.io/alfonsoanaya" target="_blank"">
+                       <i class="fab fa-codepen"></i>
+                   </a>
+               </li>
+               <!--
+               <li class="social-list__item">
+                   <a class="social-list__link" href="http://dribbble.com">
+                       <i class="fab fa-dribbble"></i>
+                   </a>
+               </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://twitter.com">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+               </li>
+               -->
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://github.com/AlfonsoAnaya" target="_blank">
+                       <i class="fab fa-github"></i>
+                   </a>
+               </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="../js/home.js"></script>
+        
+    </body>
+</html>
