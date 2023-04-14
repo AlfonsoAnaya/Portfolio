@@ -46,7 +46,7 @@
             </p>
             <p>Upon mounting, the app calls Brewdog's API and displays the first page of results (25 beers). This API call is made using fetch()
                 and is asyncronously called using react's useEffect(), which makes the fetch call after the App is mounted for the first time. 
-                The filster in the top of the page are wired with eventListeners, which in turn change the search parameter using React's 
+                The filters in the top of the page are wired with eventListeners, which in turn change the search parameter using React's 
                 built in function to update State. State is stored in Context and is updated accordingly by the filter buttons. UseEffect runs the fetch   
                 call again when these states are updated by the filters. The new incoming data is rendered in the page and replaces the old one. 
             </p>
