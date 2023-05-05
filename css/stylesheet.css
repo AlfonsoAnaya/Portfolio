@@ -567,29 +567,31 @@ header {
 }
 
 #portfolio01 {
+    order: 6;
+}
+
+#portfolio03 {
     order: 5;
 }
-#portfolio02 {
-    order: 7;
-}
-#portfolio03 {
+#portfolio04 {
     order: 4;
 }
-#portfolio04 {
-    order: 3;
-}
 #portfolio05 {
-    order: 1;
+    order: 2;
 }
 #portfolio06 {
     order: 0;
 }
 #portfolio07 {
-    order: 6;
+    order: 7;
 }
 
 #portfolio08 {
-    order: 2;
+    order: 3;
+}
+
+#portfolio09 {
+    order: 1;
 }
 
 /* footer */
