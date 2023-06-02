@@ -669,6 +669,10 @@ header {
 }
 
 .portfolio-item-individual-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
     margin: 0 auto;
     width: fit-content;
     margin-bottom: 5em;
