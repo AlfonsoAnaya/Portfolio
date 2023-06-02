@@ -566,33 +566,46 @@ header {
     width: fit-content;
 }
 
-#portfolio01 {
-    order: 6;
-}
-
-#portfolio03 {
-    order: 5;
-}
-#portfolio04 {
-    order: 4;
-}
-#portfolio05 {
-    order: 2;
-}
-#portfolio06 {
+/* line 1 */
+#portfolio10 {
     order: 0;
 }
-#portfolio07 {
-    order: 7;
+#portfolio06 {
+    order: 1;
 }
-
-#portfolio08 {
+#portfolio09 {
+    order: 2;
+}
+#portfolio05 {
     order: 3;
 }
 
-#portfolio09 {
-    order: 1;
+/* line 2*/
+#portfolio08 {
+    order: 10;
 }
+#portfolio04 {
+    order: 11;
+}
+#portfolio03 {
+    order: 12;
+}
+#portfolio01 {
+    order: 13;
+}
+
+/* line 3 */
+#portfolio07 {
+    order: 30;
+}
+#portfolio02 {
+    order: 31;
+}
+
+
+
+
+
 
 /* footer */
 
