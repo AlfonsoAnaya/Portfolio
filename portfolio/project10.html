@@ -38,38 +38,37 @@
 
     <section class="intro">
         <h1 class="section__title section__title--intro">
-            Emoji game in <strong>Typescript</strong>
+            <strong>Vue-based</strong> Typescript website
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Typescript Emoji Game</p>
-        <img src="../Images/portfolio09.png" alt="" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">Photo gallery from Unsplash API</p>
+        <img src="../Images/portfolio10.png" alt="" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
-        <p>This is a game created with Typescript. It's a simple game where your goal is to prevent the ocean
-            from destroying houses. The game has a complex business logic. It manages the passage of the seasons
-            calculating
-            the risk of attack and hurricane years in a random manner. The risk of ocean attack and hurrican year
-            increases
-            slightly every decade.
+        <p>This is my first website using Vue.js, and also incorporates Typescript.
+            The website displays a grid of photo cards.
+            The data used to populate this grid is fetched on mount from Unsplash API. In this case,
+            the request is for 30 random photos (the maximum the API allows for a single request) with
+            portrait orientation. The photos are organized in descending order of popularity (measured 
+            by number of views) using JavaSript's sort method.
         <p>
-            At the beginning of each season rewards (which can be used to improve infrastructure and gain land from the
-            sea)
-            are calculated based on the amount of beaches in the map.
+            Once we parse the JSON data from the API we are left with an array of 30 objects.
+            We map the array using vue's built in "v-for" directive. For each object we create a 
+            "PhotoCard" component instance and we pass the required props for each instance. The data thas 
+            is dynamically produced with props on each instance include: the src link for the image,
+            the name of the photographer (and its associated link to their Unsplash profile), number of views, 
+            among others.
         </p>
 
         <p>
-            As each season passes the coastline changes, and the program must update the array of squares that border
-            the ocean.
-            This array is used to select which squares can "attack" the land. Meanwhile land squares are equiped (when
-            the board
-            is created) with square listeners to update infrastructure on click.
-        </p>
-
+            The grid of photos is styled with CSS grid and is fully responsive. Each image becomes a little bit
+            transparent on hover and the cursor shifts to pointer to indicate interactivity. Clicking on it takes us to 
+            a larger version of the photo in a new tab. 
         </p>
         <img src="img/portfolio-details.jpg" alt="">
     </div>
     <div class="portfolio-item-individual-link-container">
-        <a href="https://random-lotto-picker.netlify.app/" target="_blank" class="portfolio-individual__link btn">Visit
+        <a href="https://exploreunsplashvue.netlify.app/" target="_blank" class="portfolio-individual__link btn">Visit
             website</a>
     </div>
 
