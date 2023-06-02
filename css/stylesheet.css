@@ -143,6 +143,10 @@ h3 { font-size: var(--fs-h3) }
     display: block;
 }
 
+.section__title-project {
+    margin-top: 1.5em;
+}
+
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -329,10 +333,14 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 280px;
+        min-width: 350px;
         position: relative;
         z-index: 2;
     }    
+
+    .project-intro__img {
+        min-width: 450px;
+    }
     
     .section__subtitle--intro {
         align-self: start;
