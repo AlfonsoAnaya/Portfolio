@@ -294,12 +294,22 @@ header {
     box-shadow: var(--bs);
 }
 
+.project-intro__img {
+    margin: 0 auto;
+}
+
 .intro__tag-container {
     grid-area: tags;
     display: flex;
     gap: .75em;
     flex-wrap: wrap;
     margin-bottom: 1.5em;
+}
+
+.intro__tag-container-project {
+    justify-content: center;
+    align-items:center;
+    margin-top: 1em;
 }
 
 .intro__tag-element {
@@ -351,6 +361,12 @@ header {
     .intro__tag-container {
         justify-content: space-between;
         margin-bottom: 0;
+    }
+
+    .intro__tag-container-project {
+        justify-content: left;
+        align-items: center;
+        margin-top: 0;
     }
 
     .intro__tag-element {
