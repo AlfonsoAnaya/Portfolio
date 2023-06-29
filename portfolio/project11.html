@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W1JSZBD5BC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W1JSZBD5BC');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfonso Anaya Web Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../home.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="home.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="home.html#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="home.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro  section__title-project">
+            <strong>Vue-based</strong> Typescript website
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Photo gallery from Unsplash API</p>
+        <img src="../Images/portfolio11.png" alt="" class="intro__img project-intro__img">
+        <div class="intro__tag-container intro__tag-container-project">
+            <p class="intro__tag-element">React</p>
+            <p class="intro__tag-element">React Router</p>
+            <p class="intro__tag-element">Typescript</p>
+            <p class="intro__tag-element">CSS3</p>
+            <p class="intro__tag-element">HTML5</p>
+
+        </div>
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p class="proof">This <strong>React</strong> website incorporates most of the tools that I currently master.
+            The website displays a grid of photo cards. The data comes from Unsplash API.
+            On mounting, the website makes a fetch request for 30 random photos. The data obtaines form the 
+            API is stored in an array. We map over this array to display each of the elements in their individual 
+            rusable card component.
+        <p>
+            Each card component displays information about the photographer (and link to their profile) and number of views.
+            Each photo is itself a link that takes you to a new page which displays additional information about the photo
+            and the photographer. The original set of photos persits if we go back to the main page.
+            The different pages in this website are handled with <strong>React Router</strong>.
+        </p>
+        <p>
+            The user can explore photos by typing on the textarea and look for a theme. They can also choose the number of
+            photos by typing a number in the input area. A large amount of the application state is stored in 
+            <strong>Context</strong>. This is done to avoid extensive prop drilling. In particular, the user input as well as
+            the photo data form the API is stored in Context. However the data to populate individual photo cards is 
+            passed via props.
+        </p>
+        <p>
+            The grid of photos is styled with <strong>CSS</strong> grid and is fully responsive. Each image becomes a little bit
+            transparent on hover and the cursor shifts to pointer to indicate interactivity.
+        </p>
+        <img src="img/portfolio-details.jpg" alt="">
+    </div>
+    <div class="portfolio-item-individual-link-container">
+        <a href="https://explore-unsplash-react.netlify.app/" target="_blank" class="portfolio-individual__link btn">Live Demo</a>
+            <a href="https://github.com/AlfonsoAnaya/new-gallery-from-api-react" target="_blank"
+            class="portfolio-individual__link btn">Code</a>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="" class="footer__link">alfonso.ws@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io/alfonsoanaya" target="_blank">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <!--
+               <li class="social-list__item">
+                   <a class="social-list__link" href="http://dribbble.com">
+                       <i class="fab fa-dribbble"></i>
+                   </a>
+               </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://twitter.com">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+               </li>
+               -->
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/AlfonsoAnaya" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="../js/home.js"></script>
+
+</body>
+
+</html>
